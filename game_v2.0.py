@@ -314,7 +314,7 @@ def dvigat_monstrov(pozicii, aktivnie, zakritie_dveri, soobsheniya, haha_count):
         pozicii[imya] = sleduyushaya
 
         if pozicii[imya] == 5 and imya == "Бонито":
-            soobsheniya.append("ВНИМАНИЕ: Бонито подошёл к камере 5!")
+            soobsheniya.append("Бонито подошёл к камере 5!")
 
         if imya == "Бонито":
             otbil, msg = otbit_bonito(pozicii, 5 in zakritie_dveri)
@@ -516,7 +516,7 @@ def igrat(inventar, jurnal, zakritie_dveri, smotrel_kameri):
     zagolovok(f"Добро пожаловать, {imya}")
     input("  Нажми Enter, чтобы начать ночь 1...")
 
-    for noch in range(4, 5):
+    for noch in range(1, 5):
         uspeh, inventar, jurnal, zakritie_dveri, smotrel_kameri = igrat_noch(noch, inventar, jurnal, zakritie_dveri, smotrel_kameri)
         if not uspeh:
             print(centr("ИГРА ОКОНЧЕНА. Попробуй снова."))
